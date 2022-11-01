@@ -3,6 +3,10 @@ const { doc } = require("prettier");
 // TODO: Get the form submission as an object
 const form = document.querySelector("form");
 
+function calcTotalWithTip(total, tipPct) {
+  return total + total * (tipPct / 100);
+}
+
 function handleSumbit(e) {
   e.preventDefault();
 
